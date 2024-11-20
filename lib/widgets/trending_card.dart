@@ -172,8 +172,8 @@ class TrendingCard extends StatelessWidget {
                             fontWeight: FontWeight.w400,
                             color: Colors.grey,
                           ),
-                          overflow: TextOverflow.ellipsis, // Handle long text
-                          maxLines: 1, // Limit to one line
+                          overflow: TextOverflow.ellipsis,
+                          maxLines: 1,
                         ),
                       ),
                     ],

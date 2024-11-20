@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:loading_animation_widget/loading_animation_widget.dart'; // Import the package
 import '../providers/all_screenings_provider.dart';
 import '../widgets/all_screenings_card.dart';
 
@@ -58,7 +59,12 @@ class AllScreeningsPage extends ConsumerWidget {
             ],
           ),
         ),
-        loading: () => const Center(child: CircularProgressIndicator()),
+        loading: () => Center(
+          child: LoadingAnimationWidget.newtonCradle(
+            color: Colors.white,
+            size: 30,
+          ),
+        ),
         error: (err, _) => Center(child: Text('Error: $err')),
       ),
     );

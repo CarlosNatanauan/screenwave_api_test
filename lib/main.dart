@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import './screens/splash_screen.dart'; // Import SplashScreen
 import './screens/main_screen.dart';
 import 'screens/all_screening_page.dart';
 import './screens/trending_page.dart';
@@ -22,7 +23,9 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => const MainScreen(),
+        '/': (context) =>
+            const SplashScreen(), // SplashScreen as the initial route
+        '/main': (context) => const MainScreen(),
         '/all-screenings': (context) => AllScreeningsPage(),
         '/trending': (context) => TrendingPage(),
       },
