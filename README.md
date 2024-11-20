@@ -1,6 +1,7 @@
 # 📱 Screenwave
 
-A **cross-platform** movie screening and trending app built with Flutter and **Riverpod** for state management. Designed for Android and iOS with a sleek, modern interface.
+A movie screening and trending app built using **Flutter** and **Riverpod** for state management. This app is a test client for the **Screenwave API** (https://screenwave.co.uk) and is designed for **Android** and **iOS** with a modern interface.
+
 
 ---
 # 📹 Demo Video
@@ -25,8 +26,8 @@ Below is a quick GIF showcasing the core functionalities of the app:
 - View trending screenings.
 - Explore all movie screenings with detailed information.
 - Smooth navigation between pages.
-- Beautiful loading animations for a polished user experience.
-- Compatible with both **Android** and **iOS** platforms.
+- Available for both **Android** and **iOS**.
+
 
 ---
 
