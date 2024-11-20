@@ -1,16 +1,62 @@
-# screenwave_api_test
+# 📱 Screenwave
 
-A new Flutter project.
+A **cross-platform** movie screening and trending app built with Flutter and **Riverpod** for state management. Designed for Android and iOS with a sleek, modern interface.
 
-## Getting Started
+---
+# 📹 Demo Video
 
-This project is a starting point for a Flutter application.
+Check out the full app demonstration on YouTube:  
+[![Demo Video](https://img.youtube.com/vi/K3saGNqL0xo/0.jpg)](https://www.youtube.com/watch?v=K3saGNqL0xo)  
+Click the thumbnail above to watch the video.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# 🎥 GIF Demo
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Below is a quick GIF showcasing the core functionalities of the app:
+
+<img src="https://github.com/user-attachments/assets/addc2624-a009-46cd-a813-8e6dab9f8d1b" width="300" height="500" alt="App Demo GIF">
+
+
+
+
+## 🚀 Features
+
+- View trending screenings.
+- Explore all movie screenings with detailed information.
+- Smooth navigation between pages.
+- Beautiful loading animations for a polished user experience.
+- Compatible with both **Android** and **iOS** platforms.
+
+---
+
+## 🛠️ Installation
+
+### Prerequisites
+
+- Install [Flutter](https://flutter.dev/docs/get-started/install) (version 3.x or higher).
+- Ensure **Dart SDK** is installed.
+- Setup Android Studio/Xcode for development.
+
+### Steps
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+
+2. Install dependencies:
+   ```bash
+   flutter pub get
+3. Run the app:
+   ```bash
+   flutter run
+
+# 🧰 Packages Used
+
+| **Package Name**        | **Description**                                      |
+|--------------------------|----------------------------------------------------|
+| flutter_riverpod         | State management for efficient UI updates.         |
+| loading_animation_widget | Custom animations for loading states.              |
+| http                     | API integration for fetching data.                 |
+
