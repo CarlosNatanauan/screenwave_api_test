@@ -15,7 +15,7 @@ Click the thumbnail above to watch the video.
 
 Below is a quick GIF showcasing the core functionalities of the app:
 
-<img src="https://github.com/user-attachments/assets/addc2624-a009-46cd-a813-8e6dab9f8d1b" width="300" height="500" alt="App Demo GIF">
+![App Demo GIF](https://github.com/user-attachments/assets/addc2624-a009-46cd-a813-8e6dab9f8d1b)
 
 
 
