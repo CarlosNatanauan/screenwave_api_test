@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:loading_animation_widget/loading_animation_widget.dart'; // Import the package
+import 'package:loading_animation_widget/loading_animation_widget.dart';
 import '../providers/all_screenings_provider.dart';
 import '../providers/trending_provider.dart';
 import '../widgets/all_screenings_card.dart';
@@ -16,19 +16,18 @@ class MainScreen extends ConsumerWidget {
     final allScreeningsAsync = ref.watch(allScreeningsProvider);
     final trendingAsync = ref.watch(trendingProvider);
 
-    // Get screen width
     final screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Colors.black, // Set AppBar background to black
-        elevation: 0, // Remove the shadow
-        centerTitle: true, // Center the content of the AppBar
+        backgroundColor: Colors.black,
+        elevation: 0,
+        centerTitle: true,
         title: Image.asset(
-          'assets/screenwave-logo-main.png', // Use your PNG image from assets
-          width: screenWidth * 0.8, // Set the width as 50% of the screen width
-          fit: BoxFit.contain, // Ensure the image scales properly
+          'assets/screenwave-logo-main.png',
+          width: screenWidth * 0.8,
+          fit: BoxFit.contain,
         ),
       ),
       body: SingleChildScrollView(
@@ -52,8 +51,8 @@ class MainScreen extends ConsumerWidget {
                             '${data.heading}',
                             style: const TextStyle(
                               fontSize: 15,
-                              fontWeight: FontWeight.w500, // Changed to w500
-                              color: Colors.white, // Set to white
+                              fontWeight: FontWeight.w500,
+                              color: Colors.white,
                             ),
                             overflow: TextOverflow.ellipsis,
                           ),
@@ -69,8 +68,7 @@ class MainScreen extends ConsumerWidget {
                           child: const Text(
                             'See All',
                             style: TextStyle(
-                              color: Color.fromARGB(
-                                  255, 236, 67, 107), // Set custom RGB color
+                              color: Color.fromARGB(255, 236, 67, 107),
                             ),
                           ),
                         ),
@@ -86,7 +84,7 @@ class MainScreen extends ConsumerWidget {
               loading: () => Center(
                 child: LoadingAnimationWidget.newtonCradle(
                   color: Colors.white,
-                  size: 30, // You can adjust the size here
+                  size: 30,
                 ),
               ),
               error: (err, _) => Center(child: Text('Error: $err')),
